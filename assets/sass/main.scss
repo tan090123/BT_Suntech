@@ -303,6 +303,7 @@ li {
 
     img {
         display: inline-block;
+        cursor: pointer;
     }
 
     h3,
@@ -429,6 +430,10 @@ li {
             padding: 20px;
             width: 10.5rem;
         }
+
+        img {
+            cursor: pointer;
+        }
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -469,6 +474,7 @@ li {
             img {
                 border-radius: 3px;
                 background-image: #5f5f5f;
+                cursor: pointer;
             }
         }
     }

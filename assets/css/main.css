@@ -268,6 +268,7 @@ li {
 }
 .service img {
   display: inline-block;
+  cursor: pointer;
 }
 .service h3,
 .service p {
@@ -391,6 +392,9 @@ li {
   padding: 20px;
   width: 10.5rem;
 }
+.offers .offers--client img {
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 1024px) {
   .offers--client li {
@@ -428,4 +432,5 @@ li {
 .footer .cash--list .cash--list__item img {
   border-radius: 3px;
   background-image: #5f5f5f;
+  cursor: pointer;
 }
