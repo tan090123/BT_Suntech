@@ -100,18 +100,23 @@ li {
   display: none;
 }
 
-.active--list__item:first-child::before {
+.active--list__item {
+  position: relative;
+}
+
+.active--list__item::after {
   content: "3";
   position: absolute;
-  display: block;
-  height: 1.3rem;
-  width: 1.3rem;
-  background: #3cb878;
+  top: -15px;
+  right: -12px;
+  background-color: #3cb878;
+  color: #fff;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   text-align: center;
-  line-height: 1.3rem;
-  top: -8px;
-  right: 0;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 1023.5px) {
@@ -176,6 +181,13 @@ li {
     font-size: 2rem;
     letter-spacing: 1px;
   }
+  .active--list__item {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .active--list__icon .menu {
+    display: none;
+  }
 }
 @media only screen and (max-width: 480px) {
   .banner {
@@ -206,6 +218,7 @@ li {
 .best-sellers .best-sellers--inner {
   position: relative;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .best-sellers .best-sellers--inner ul {
   position: absolute;
@@ -312,6 +325,9 @@ li {
 
 .featured {
   margin-bottom: 3rem;
+}
+.featured .featured--product__inner {
+  cursor: pointer;
 }
 .featured .featured--product__inner h3 {
   font-weight: 700;
