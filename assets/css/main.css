@@ -159,6 +159,7 @@ li {
 @media only screen and (max-width: 1024px) {
   .banner {
     margin: 4rem 0;
+    background-size: 100% 100%;
   }
   .banner--title {
     left: 6rem;
@@ -172,7 +173,7 @@ li {
   .banner {
     min-height: 30rem;
     max-height: 50rem;
-    margin: 2rem 0;
+    background-size: 100% 100%;
   }
   .banner--title {
     left: 3rem;
@@ -192,7 +193,8 @@ li {
 @media only screen and (max-width: 480px) {
   .banner {
     min-height: 20rem;
-    max-height: 30rem;
+    max-height: 40rem;
+    background-size: 100% 100%;
   }
   .banner--title {
     left: 1.5rem;
